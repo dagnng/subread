@@ -1,0 +1,321 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+/* typography */
+@font-face {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Be Vietnam Pro', sans-serif;
+
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Be Vietnam Pro', sans-serif;
+ 
+  font-weight: 400;
+  font-style: normal;
+}
+html {
+  font-size: 8px;
+}
+@media only screen and (min-width: 568px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+body {
+  background-color: #FFFFFF;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 300;
+  line-height: 1.45em;
+  color: #333;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  font-family: inherit;
+  font-weight: 300;
+  line-height: 1.2em;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 7.594em;
+}
+
+h2 {
+  font-size: 4.5em;
+}
+
+h3 {
+  font-size: 3.5em;
+}
+
+h4 {
+  font-size: 2.25em;
+}
+
+h5 {
+  font-size: 1.5em;
+}
+
+small,
+.small {
+  font-size: 0.667em;
+}
+
+/* body */
+body {
+  margin: 0;
+}
+
+/* header */
+header {
+  -webkit-position: sticky;
+  position: sticky;
+  top: 0;
+  margin: 0 15px;
+  padding: 15px 0;
+  border-bottom: 2px solid #202020;
+  background-color: white;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+@media only screen and (min-width: 568px) {
+  header {
+    flex-direction: row;
+  }
+}
+header .logotype {
+}
+header .tagline {
+  color: #ccc;
+}
+header .tagline span {
+  white-space: nowrap;
+}
+
+/* main */
+main {
+  position: relative;
+}
+
+/* section */
+section {
+  position: relative;
+}
+
+/* section.hero */
+section.hero {
+  position: relative;
+  margin: 0 15px;
+  border-bottom: 2px solid #202020;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: column;
+}
+@media only screen and (min-width: 568px) {
+  section.hero {
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row;
+  }
+}
+section.hero .image {
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+}
+@media only screen and (min-width: 568px) {
+  section.hero .image {
+    width: 50%;
+  }
+}
+section.hero .image img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+section.hero .info {
+  position: relative;
+  width: 100%;
+  padding: 45px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 568px) {
+  section.hero .info {
+    width: 50%;
+    padding-left: 20px;
+  }
+}
+section.hero .info .text + .text {
+  margin-top: 2em;
+  padding-top: 20px;
+}
+section.hero .info .text h4 + h4 + a {
+  margin-top: 0.25em;
+  color: #ccc;
+}
+
+/* section.projects */
+section.projects {
+  position: relative;
+}
+section.projects .project {
+  position: relative;
+  margin: 0 15px;
+}
+section.projects .project + .project {
+  border-top: 1px solid #202020;
+}
+section.projects .project .header {
+  -webkit-position: sticky;
+  position: sticky;
+  top: 55px;
+  display: flex;
+  padding: 15px 0;
+  cursor: pointer;
+  z-index: 1;
+  background-color: white;
+}
+section.projects .project .header .indicator {
+  position: relative;
+  width: 30px;
+  display: flex;
+}
+@media only screen and (min-width: 568px) {
+  section.2jects .project .header .indicator {
+    width: 40px;
+  }
+}
+  
+section.projects .project .header .indicator .circle {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+@media only screen and (min-width: 568px) {
+  section.projects .project .header .indicator .circle {
+    margin-top: 4px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  section.projects .project .header .indicator .circle {
+    margin-top: 7px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  section.projects .project .header .indicator .circle {
+    margin-top: 9px;
+  }
+}
+
+
+section.projects .project .header .meta {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 568px) {
+  section.projects .project .header .meta {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+section.projects .project .header .meta .title {
+  position: relative;
+  margin-bottom: 5px;
+  padding-right: 20px;
+}
+@media only screen and (min-width: 568px) {
+  section.projects .project .header .meta .title {
+    margin-bottom: 0;
+  }
+}
+section.projects .project .header .meta .category {
+  position: relative;
+  color: #ccc;
+}
+section.projects .project .media {
+  position: relative;
+  display: none;
+}
+section.projects .project.selected .media {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+section.projects .project .media .image {
+  position: relative;
+  width: 100%;
+}
+@media only screen and (min-width: 568px) {
+  section.projects .project .media .image {
+    width: 50%;
+  }
+}
+section.projects .project .media .image img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* footer */
+footer {
+  position: relative;
+}
+/* section.info */
+section.copyright {
+  position: relative;
+  margin: 0 15px;
+  padding: 15px 0;
+  border-top: 2px solid #202020;
+  diflex;
+}
