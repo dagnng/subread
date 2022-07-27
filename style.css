@@ -173,6 +173,19 @@ section.hero .image {
   width: 100%;
   padding: 20px 0;
 }
+.rotate { 
+   transform-origin: center center;
+    transform-style: preserve-3d;
+  
+	transform: rotateY(45deg);
+	animation: rotateAnimation 5s linear infinite;
+}
+
+@keyframes rotateAnimation {
+	from {transform: rotateY(0deg);}
+	to {transform: rotateY(359deg);}
+
+    }
 @media only screen and (min-width: 568px) {
   section.hero .image {
     width: 50%;
