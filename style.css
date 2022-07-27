@@ -154,6 +154,7 @@ section {
 /* section.hero */
 section.hero {
   position: relative;
+  padding-top: 55px;
   margin: 0 15px;
   border-bottom: 2px solid #202020;
   display: flex;
