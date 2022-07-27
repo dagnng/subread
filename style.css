@@ -30,21 +30,21 @@ html {
   font-style: normal;
 }
 html {
-  font-size: 8px;
+  font-size: 26px;
 }
 @media only screen and (min-width: 568px) {
   html {
-    font-size: 8px;
+    font-size: 16px;
   }
 }
 @media only screen and (min-width: 768px) {
   html {
-    font-size: 10px;
+    font-size: 16px;
   }
 }
 @media only screen and (min-width: 1280px) {
   html {
-    font-size: 10px;
+    font-size: 16px;
   }
 }
 
@@ -122,6 +122,14 @@ header {
 @media only screen and (min-width: 568px) {
   header {
     flex-direction: row;
+    
+    width: 100%;
+    height: auto;
+    position: fixed;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
   }
 }
 header .logotype {
@@ -266,6 +274,10 @@ section.projects .project .header .meta {
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+     width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
   }
 }
 section.projects .project .header .meta .title {
